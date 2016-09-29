@@ -5,6 +5,7 @@ DummyWCFDuplexService{
 		}
 
 		ValueChanged(){
+			// call unmanaged code in here.
 			//trigger OnValueChanged Interface
 		}
 	}
