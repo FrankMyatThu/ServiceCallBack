@@ -1,27 +1,31 @@
-Dummy_CPlusPlusLibrary{
-	initialize(){
-		// service initialize		
-	}
-	
-	void Process(CallbackFunction){
-		for(int i=0; i<10000; i++){
-			// ...
-		}
-		CallbackFunction(TestValue);
-	}
-	
-	void DummyCallbackFunction(){
-		// trigger ValueChanged(TestValue);
-	}
-}
-
 DummyWCFDuplexService{
-	register(){
-		// register subscriber(s)
+	ManagedCodeArea{
+		register(){
+			// register subscriber(s)
+		}
+
+		ValueChanged(){
+			//trigger OnValueChanged Interface
+		}
 	}
 
-	ValueChanged(){
-		//trigger OnValueChanged Interface
+	UnManagedCodeArea{
+		Dummy_CPlusPlusLibrary{
+			initialize(){
+				// service initialize		
+			}
+			
+			void Process(CallbackFunction){
+				for(int i=0; i<10000; i++){
+					// ...
+				}
+				CallbackFunction(TestValue);
+			}
+			
+			void DummyCallbackFunction(){
+				// trigger ValueChanged(TestValue);
+			}
+		}
 	}
 }
 
