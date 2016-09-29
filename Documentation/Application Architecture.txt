@@ -1,0 +1,70 @@
+ClientApplication1{}
+ClientApplication2{}
+ClientApplication3{
+	private WCFDuplexService.NotificationClient _WCFServiceClient;
+	public class RTDBCallback : WCFDuplexService.INotificationCallBack
+	{
+		public void OnValueChanged(List<ChangedData> List_ChangedData)
+		{
+			// do the rest job(s) using list of data (List_ChangedData)
+			// ... eg. iterate through the list and save to db.			
+		}
+	}
+
+	public void btn_ScribeService(){
+		InstanceContext context = new InstanceContext(new RTDBCallback());
+		_WCFServiceClient = new WCFDuplexService.NotificationClient(context);
+		_WCFServiceClient.Subscribe(... sample client id ...);
+	}
+}
+
+WCFDuplexService{
+	INotification{
+		void Subscribe(Guid ClientApplicationID);
+		void ValueChanged(List<ChangedData> List_ChangedData);
+	}
+	
+	INotificationCallBack{
+		void OnValueChanged(List<ChangedData> List_ChangedData);
+	}
+	
+	Notification : INotification{
+		private List<Guid, INotificationCallBack> Subscribers = new List<Guid, INotificationCallBack>();
+		
+		void Subscribe(Guid ClientApplicationID){
+			INotificationCallBack callback = OperationContext.Current.GetCallbackChannel<INotificationCallBack>();
+			Subscribers.add(ClientApplicationID, callback);
+		}
+		
+		void ValueChanged(Guid ClientApplicationID, List<ChangedData> List_ChangedData){			
+			for(int i=0; i<Subscribers.Length; i++){
+				INotificationCallBack callback = Subscribers[i];
+				if(Subscribers[i].ClientApplicationID == ClientApplicationID){
+					callback.OnValueChanged(List_ChangedData);
+				}
+			}
+		}
+	}
+	
+}
+
+WillowLynx_AvcOfvDll{
+	CPlusPlusClass{
+		private WCFDuplexService.NotificationClient _WCFServiceClient;
+        public class RTDBCallback : WCFDuplexService.INotificationCallBack
+        {
+            public void OnValueChanged(string strFilename)
+            {
+                //Won't implement anything here
+            }
+        }
+
+        private void legacyCallBackFunction()
+        {
+            InstanceContext context = new InstanceContext(new RTDBCallback());
+            _WCFServiceClient = new WCFDuplexService.NotificationClient(context);
+			_WCFServiceClient.ValueChanged(... set list of record(s) in here ...);
+        }		
+	}
+}
+
