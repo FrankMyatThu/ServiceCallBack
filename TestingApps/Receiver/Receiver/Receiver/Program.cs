@@ -15,7 +15,8 @@ namespace Receiver
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         delegate string GetFilePathCallback(string filter);
 
-        [DllImport(@"C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Engine\Debug\Engine.dll", CallingConvention = CallingConvention.Cdecl)]
+        //[DllImport(@"C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Engine\Debug\Engine.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport(@"C:\willowlynx\scada\arch\T-i386-ntvc\bin\DataPorting.dll", CallingConvention = CallingConvention.Cdecl)]
         static extern void DoWork([MarshalAs(UnmanagedType.FunctionPtr)] ProgressCallback callbackPointer);
 
         static void Main(string[] args)
