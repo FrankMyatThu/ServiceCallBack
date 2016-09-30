@@ -10,7 +10,6 @@ DLL void DoWork(ProgressCallback progressCallback)
 	for (; counter <= 100; counter++)
 	{
 		// do the work...
-
 		if (progressCallback)
 		{
 			// send progress update
