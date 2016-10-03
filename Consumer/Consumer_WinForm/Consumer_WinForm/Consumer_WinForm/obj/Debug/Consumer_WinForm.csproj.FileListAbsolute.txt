@@ -1,0 +1,8 @@
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\bin\Debug\Consumer_WinForm.exe.config
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\bin\Debug\Consumer_WinForm.exe
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\bin\Debug\Consumer_WinForm.pdb
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\obj\Debug\Consumer_WinForm.Form1.resources
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\obj\Debug\Consumer_WinForm.Properties.Resources.resources
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\obj\Debug\Consumer_WinForm.csproj.GenerateResource.Cache
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\obj\Debug\Consumer_WinForm.exe
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WinForm\Consumer_WinForm\Consumer_WinForm\obj\Debug\Consumer_WinForm.pdb
