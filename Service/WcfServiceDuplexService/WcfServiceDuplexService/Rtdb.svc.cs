@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
@@ -10,6 +11,14 @@ namespace WcfServiceDuplexService
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class Rtdb : IRtdb
     {
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        delegate void CSharpCallback(int value);
+                
+        [DllImport(@"C:\willowlynx\scada\arch\T-i386-ntvc\bin\DataPorting.dll", CallingConvention = CallingConvention.Cdecl)]
+        static extern void DoWork_CSharpCallback([MarshalAs(UnmanagedType.FunctionPtr)] CSharpCallback callbackPointer);
+
+        
+
         private object locker = new object();
         private Dictionary<EachSubscriber, IRtdbCallback> Subscribers = new Dictionary<EachSubscriber, IRtdbCallback>();
 
@@ -22,12 +31,12 @@ namespace WcfServiceDuplexService
 
             subscriberKeys.ForEach(delegate(EachSubscriber _EachSubscriber)
             {
-                IRtdbCallback callback = Subscribers[_EachSubscriber];
-                if (((ICommunicationObject)callback).State == CommunicationState.Opened)
+                IRtdbCallback _IRtdbCallback = Subscribers[_EachSubscriber];
+                if (((ICommunicationObject)_IRtdbCallback).State == CommunicationState.Opened)
                 {
                     if (_EachSubscriber.SubscriberID.Equals(SubscriberID)) 
                     {
-                        callback.OnValueChange(Value);
+                        _IRtdbCallback.OnValueChange(Value);
                     }
                 }
                 else
@@ -43,12 +52,19 @@ namespace WcfServiceDuplexService
         {
             try
             {
-                IRtdbCallback callback = OperationContext.Current.GetCallbackChannel<IRtdbCallback>();
+                IRtdbCallback _IRtdbCallback = OperationContext.Current.GetCallbackChannel<IRtdbCallback>();
                 lock (locker)
                 {
                     EachSubscriber _EachSubscriber = new EachSubscriber();
-                    _EachSubscriber.SubscriberID = SubscriberID;                    
-                    Subscribers.Add(_EachSubscriber, callback);
+                    _EachSubscriber.SubscriberID = SubscriberID;
+                    Subscribers.Add(_EachSubscriber, _IRtdbCallback);
+                    CSharpCallback _CSharpCallback =
+                    (value) =>
+                    {   
+                        ValueChange(SubscriberID, value);
+                    };
+                    DoWork_CSharpCallback(_CSharpCallback);
+                   
                 }
             }
             catch(Exception ex)
