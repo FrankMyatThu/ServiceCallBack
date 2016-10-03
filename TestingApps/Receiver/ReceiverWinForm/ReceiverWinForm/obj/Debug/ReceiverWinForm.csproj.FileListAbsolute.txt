@@ -1,0 +1,8 @@
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\obj\Debug\ReceiverWinForm.Form1.resources
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\obj\Debug\ReceiverWinForm.Properties.Resources.resources
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\obj\Debug\ReceiverWinForm.csproj.GenerateResource.Cache
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\bin\Debug\ReceiverWinForm.exe.config
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\bin\Debug\ReceiverWinForm.exe
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\bin\Debug\ReceiverWinForm.pdb
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\obj\Debug\ReceiverWinForm.exe
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\ReceiverWinForm\ReceiverWinForm\obj\Debug\ReceiverWinForm.pdb
