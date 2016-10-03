@@ -24,14 +24,10 @@ namespace Receiver
             ProgressCallback callback =
                 (value) =>
                 {
-                    Console.WriteLine("Progress = {0}", value);
+                    Console.WriteLine("rtdb value = {0}", value);
                 };
- 
-            Console.WriteLine("Press any key to run DoWork....");
-            Console.ReadKey(true);
             
             DoWork(callback);
-
             Console.ReadKey(true);
         }
     }
