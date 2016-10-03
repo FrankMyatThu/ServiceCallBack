@@ -1,0 +1,6 @@
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Service\WcfServiceDuplexService\WcfServiceDuplexService\bin\WcfServiceDuplexService.dll.config
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Service\WcfServiceDuplexService\WcfServiceDuplexService\bin\WcfServiceDuplexService.dll
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Service\WcfServiceDuplexService\WcfServiceDuplexService\bin\WcfServiceDuplexService.pdb
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Service\WcfServiceDuplexService\WcfServiceDuplexService\obj\Debug\WcfServiceDuplexService.csprojResolveAssemblyReference.cache
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Service\WcfServiceDuplexService\WcfServiceDuplexService\obj\Debug\WcfServiceDuplexService.dll
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Service\WcfServiceDuplexService\WcfServiceDuplexService\obj\Debug\WcfServiceDuplexService.pdb
