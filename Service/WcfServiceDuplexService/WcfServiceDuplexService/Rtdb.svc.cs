@@ -17,8 +17,6 @@ namespace WcfServiceDuplexService
         [DllImport(@"C:\willowlynx\scada\arch\T-i386-ntvc\bin\DataPorting.dll", CallingConvention = CallingConvention.Cdecl)]
         static extern void DoWork_CSharpCallback([MarshalAs(UnmanagedType.FunctionPtr)] CSharpCallback callbackPointer);
 
-        
-
         private object locker = new object();
         private Dictionary<EachSubscriber, IRtdbCallback> Subscribers = new Dictionary<EachSubscriber, IRtdbCallback>();
 

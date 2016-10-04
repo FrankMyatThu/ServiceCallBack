@@ -1,0 +1,6 @@
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WebForm\ConsumerWebForm\ConsumerWebForm\bin\ConsumerWebForm.dll.config
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WebForm\ConsumerWebForm\ConsumerWebForm\bin\ConsumerWebForm.dll
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WebForm\ConsumerWebForm\ConsumerWebForm\bin\ConsumerWebForm.pdb
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WebForm\ConsumerWebForm\ConsumerWebForm\obj\Debug\ConsumerWebForm.csprojResolveAssemblyReference.cache
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WebForm\ConsumerWebForm\ConsumerWebForm\obj\Debug\ConsumerWebForm.dll
+C:\Frank\SMS Project\Dummy\ServiceCallBack\Consumer\Consumer_WebForm\ConsumerWebForm\ConsumerWebForm\obj\Debug\ConsumerWebForm.pdb
