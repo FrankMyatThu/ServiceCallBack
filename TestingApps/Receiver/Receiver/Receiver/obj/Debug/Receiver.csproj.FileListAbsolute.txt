@@ -1,6 +1,6 @@
 C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\Receiver\Receiver\bin\Debug\Receiver.exe.config
 C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\Receiver\Receiver\bin\Debug\Receiver.exe
 C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\Receiver\Receiver\bin\Debug\Receiver.pdb
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\Receiver\Receiver\obj\Debug\Receiver.csprojResolveAssemblyReference.cache
 C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\Receiver\Receiver\obj\Debug\Receiver.exe
 C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\Receiver\Receiver\obj\Debug\Receiver.pdb
-C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\Receiver\Receiver\Receiver\obj\Debug\Receiver.csprojResolveAssemblyReference.cache

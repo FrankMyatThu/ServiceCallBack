@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AngularJS - SignalR - ServiceDashboard</title>
+
+    <script src="./Scripts/jquery-3.1.1.min.js"></script>
+    <script src="./Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script src="./Scripts/angular.min.js"></script>
+    <script src="./signalr/hubs"></script>
+
+    <script src="./app/app.js"></script>
+    <script src="./app/services.js"></script>    
+    <script src="./app/controllers.js"></script>
+</head>
+<body ng-app="rtdbServiceDashboard">
+    <div ng-controller="rtdbDataController">
+        <button ng-click="GetNotification();">Click me!</button>
+    </div>
+</body>
+</html>

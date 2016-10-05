@@ -1,0 +1,6 @@
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\SignalR\Consumer\SignalRConsumer\SignalRConsumer\bin\SignalRConsumer.dll.config
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\SignalR\Consumer\SignalRConsumer\SignalRConsumer\bin\SignalRConsumer.dll
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\SignalR\Consumer\SignalRConsumer\SignalRConsumer\bin\SignalRConsumer.pdb
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\SignalR\Consumer\SignalRConsumer\SignalRConsumer\obj\Debug\SignalRConsumer.dll
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\SignalR\Consumer\SignalRConsumer\SignalRConsumer\obj\Debug\SignalRConsumer.pdb
+C:\Frank\SMS Project\Dummy\ServiceCallBack\TestingApps\SignalR\Consumer\SignalRConsumer\SignalRConsumer\obj\Debug\SignalRConsumer.csprojResolveAssemblyReference.cache
