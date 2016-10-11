@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="microsoft.aspnet.signalr.client.hubs.HubConnection"/>
+<fullyQualifiedTypeName name="microsoft.aspnet.signalr.client.hubs.HubProxy"/>
+<fullyQualifiedTypeName name="microsoft.aspnet.signalr.client.transport.ServerSentEventsTransport"/>
+<fullyQualifiedTypeName name="microsoft.aspnet.signalr.client.transport.ClientTransport"/>
+<fullyQualifiedTypeName name="microsoft.aspnet.signalr.client.SignalRFuture"/>
+<fullyQualifiedTypeName name="microsoft.aspnet.signalr.client.hubs.SubscriptionHandler1"/>
+<fullyQualifiedTypeName name="SignalRService"/>
+</qualifiedTypeNameHistroy>

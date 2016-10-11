@@ -1,0 +1,13 @@
+{
+  "C:\\Program Files\\Java\\jre1.8.0_102\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_102\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No call model found for \u0027C:\\Program Files\\Java\\jre1.8.0_102\\lib\\rt.jar\u0027. Neither fingerprint \u0027714002967258906ad37e6790e06a86289df2a94b\u0027 nor symbolic name \u0027jre\u0027 are known."
+  },
+  "C:\\Users\\wgn-009-233\\workspace\\RtdbListener\\src": {
+    "location": "C:\\Users\\wgn-009-233\\workspace\\RtdbListener\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\wgn-009-233\\workspace\\RtdbListener\\src\u0027. Skipped."
+  }
+}
